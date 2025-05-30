@@ -1,0 +1,5 @@
+min_flowiat
+max_flowiat
+std_flowiat
+flowBytesPerSecond
+max_fiat
