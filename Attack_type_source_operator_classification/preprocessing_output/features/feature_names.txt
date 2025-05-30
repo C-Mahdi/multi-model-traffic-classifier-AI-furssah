@@ -1,0 +1,7 @@
+Total Length of Fwd Packets
+Bwd Packet Length Max
+Flow Bytes/s
+Fwd IAT Total
+Bwd IAT Total
+Fwd PSH Flags
+Fwd Packets/s

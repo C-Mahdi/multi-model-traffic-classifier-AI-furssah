@@ -1,0 +1,51 @@
+CICIDS2017 Real-Time Evaluation Report
+==================================================
+Timestamp: 2025-05-29 23:21:42
+
+SYSTEM CONFIGURATION
+------------------------------
+Batch Size: 100
+Alert Threshold: 0.8
+Window Size: 300 seconds
+Max Queue Size: 1000
+
+MODEL INFORMATION
+------------------------------
+attack_type Model:
+  n_estimators: 200
+  max_depth: 15
+  n_features: 7
+
+traffic_source Model:
+  n_estimators: 200
+  max_depth: 20
+  n_features: 7
+
+operator_type Model:
+  n_estimators: 200
+  max_depth: 15
+  n_features: 7
+
+EVALUATION SUMMARY
+------------------------------
+total_duration: 186.78
+total_flows: 500.00
+total_alerts: 0.00
+average_throughput: 2.68
+alert_rate: 0.00
+
+TRAFFIC SOURCE CLASSIFICATION METRICS
+------------------------------
+Accuracy: 0.728
+Precision: 0.530
+Recall: 0.728
+F1-Score: 0.613
+
+ALERT DISTRIBUTION
+------------------------------
+
+PREDICTION DISTRIBUTION
+------------------------------
+attack_type_BENIGN: 500
+traffic_source_BENIGN: 500
+operator_type_BENIGN: 500
