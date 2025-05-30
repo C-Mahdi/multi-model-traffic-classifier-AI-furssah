@@ -56,7 +56,6 @@ link:https://www.unb.ca/cic/datasets/ids-2017.html
 - **Class Distribution**: Imbalanced, with benign traffic dominating (\~80%).
 - **Usage**: Preprocessed to 100,000 samples with 7 features for multi-classification tasks.
 
-## Project Structure
 
 The pipeline is organized into preprocessing, training, and evaluation components, with the Streamlit interface as the evaluation frontend.
 
