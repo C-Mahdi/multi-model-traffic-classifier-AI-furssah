@@ -9,6 +9,7 @@ from sklearn.metrics import confusion_matrix, classification_report, accuracy_sc
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+import os
 
 # Set page config
 st.set_page_config(
@@ -60,12 +61,18 @@ MODEL_CONFIGS = {
 def load_model(model_name):
     """Load the selected model"""
     config = MODEL_CONFIGS[model_name]
+
+    # Get the directory where this script is located
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    model_path = os.path.join(script_dir, config["model_file"])
+
+
     try:
         if config["model_type"] == "pickle":
-            with open(config["model_file"], 'rb') as file:
+            with open(model_path, 'rb') as file:
                 model = pickle.load(file)
         else:  # joblib
-            model = joblib.load(config["model_file"])
+            model = joblib.load(model_path)
         return model, None
     except FileNotFoundError:
         return None, f"Model file '{config['model_file']}' not found in the current directory."
