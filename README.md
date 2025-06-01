@@ -63,7 +63,7 @@ The pipeline is organized into preprocessing, training, and evaluation component
 
 - **Purpose**: Cleans and transforms ISCXVPN2016 and CICIDS2017 datasets for model training.
 - **Components**:
-  1. **Libraries and Setup**: Uses `pandas`, `numpy`, `sklearn`, and related libraries.
+  1. **Libraries and Setup**: Uses `pandas`, `numpy`, `sklearn`,`shap`, and related libraries.
   2. **Data Loading**:
      - ISCXVPN2016: Loads `Combined_TimeBasedFeatures_Dataset.csv`.
      - CICIDS2017: Combines 8 CSV files from `MachineLearningCVE/`.
